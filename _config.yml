@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 那家哥哥
-subtitle:
-description: Wulian Core Team
+title: 那就搞搞
+subtitle: nj.gg - 南京物联传感团队博客
+description: Wulian Core Team's Blog.
 author: Wulian Core Team
 language:
 timezone:
@@ -43,7 +43,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: Doing
 category_map:
 tag_map:
 

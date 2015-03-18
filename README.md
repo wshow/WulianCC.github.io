@@ -31,19 +31,19 @@ Tags can be Anything Common like these below:
 #### Create a Draft
 
 ```
-hexo new 'Title Name' -slug 'title-name'
+hexo new 'UserNickName: Title Name' -slug 'nickname-title-name'
 ```
 
 #### Publish a Draft
 
 ```
-hexo publish title-name
+hexo publish nickname-title-name
 ```
 
 ### Create a Post directly
 
 ```
-hexo new post 'Title Name' -slug 'title-name'
+hexo new post 'UserNickName: Title Name' -slug 'nickname-title-name'
 ```
 
 ### Deploy _cautiously use_

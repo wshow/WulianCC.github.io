@@ -27,6 +27,8 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
+# Hexo Related
+.DS_Store
 public
 db.json
 .deploy_git
