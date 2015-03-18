@@ -1,3 +1,4 @@
 title: {{ title }}
+categories: 
 tags:
 ---
