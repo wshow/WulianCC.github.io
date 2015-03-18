@@ -70,5 +70,4 @@ deploy:
   type: git
   repo: git@github.com:WulianCC/nj.gg.git
   branch: gh-pages
-  message: Hexo Deployer
  
