@@ -51,3 +51,9 @@ hexo new post 'UserNickName: Title Name' -slug 'nickname-title-name'
 ```
 hexo deploy
 ```
+
+Or try this better way:
+
+```
+make publish
+```
