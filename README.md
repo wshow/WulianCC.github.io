@@ -2,7 +2,7 @@
 
 ## Wulian Team Blog
 
-![Build](https://travis-ci.org/WulianCC/nj.gg.svg)
+[![Build](https://travis-ci.org/WulianCC/nj.gg.svg)](https://travis-ci.org/WulianCC/nj.gg)
 
 ### Categories And Tags
 
@@ -59,3 +59,7 @@ Or try this better way:
 ```
 make publish
 ```
+
+Now we no need do anything to deploy the site thanks to **Travis-CI**.
+
+
