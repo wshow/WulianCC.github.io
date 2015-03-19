@@ -2,7 +2,7 @@
 
 ## Wulian Team Blog
 
-[![Build](https://travis-ci.org/WulianCC/nj.gg.svg)](https://travis-ci.org/WulianCC/nj.gg)
+[![Donate](https://img.shields.io/gratipay/willin.svg)](https://gratipay.com/willin/)  [![Build](https://travis-ci.org/WulianCC/nj.gg.svg)](https://travis-ci.org/WulianCC/nj.gg)  [![Dependency](https://david-dm.org/wuliancc/nj.gg.svg)](https://david-dm.org/wuliancc/nj.gg)  [![io.js](https://img.shields.io/badge/io.js-%3E=_1.5.1-green.svg)](https://iojs.org)
 
 ### Categories And Tags
 
@@ -42,7 +42,7 @@ hexo new 'UserNickName: Title Name' -slug 'nickname-title-name'
 hexo publish nickname-title-name
 ```
 
-### Create a Post directly
+#### Create a Post directly
 
 ```
 hexo new post 'UserNickName: Title Name' -slug 'nickname-title-name'
