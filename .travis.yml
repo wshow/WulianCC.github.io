@@ -1,0 +1,8 @@
+language: node_js
+node_js: iojs
+install: npm install .
+script: npm start
+env:
+  global:
+  - GH_REF: github.com/WulianCC/nj.gg.git
+  - secure: yPdV48BP2gALAFFg+nOUqk4preiMXHO+aLKxzCSVJ0eJZvwxiEAhMNUswxEpjtaK5uKPqPS8xo7t8SN+RNS4gO+Z26gEhF+Hdw1lM/mqpmT/PsKcm/oLM6tYb8iUqyy2qiOspNIXTUu3xppFUoFnVWe2lFBx8SPmkp0Ec1ocXOw=
