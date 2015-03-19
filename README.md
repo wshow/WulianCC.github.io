@@ -2,6 +2,8 @@
 
 ## Wulian Team Blog
 
+![Build](https://travis-ci.org/WulianCC/nj.gg.svg)
+
 ### Categories And Tags
 
 Categories and Tags should use single English words, initials in capitals.

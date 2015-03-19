@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -rf public || exit 0;
-node_modules/hexo/bin/hexo deploy
+node_modules/hexo/bin/hexo generate
 ( cd public
  git init
  git config user.name "Travis-CI"
