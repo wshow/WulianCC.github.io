@@ -63,6 +63,7 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: landscape
+disqus_shortname: wulian
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
