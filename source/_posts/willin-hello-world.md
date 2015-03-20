@@ -1,8 +1,7 @@
 title: "Willin: Hello World!"
 date: 2015-03-18 23:13:14
 categories: Doing
-tags:
-- Event
+tags: [event]
 ---
 
 Welcome to Nanjing Wulian Core Team Blog. I call this site ***那就搞搞*** (Just Do Something), which in Chinese pinyin is short for [nj.gg](http://nj.gg).

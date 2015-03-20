@@ -2,7 +2,7 @@
 
 ## Wulian Team Blog
 
-[![Donate](https://img.shields.io/gratipay/willin.svg)](https://gratipay.com/willin/)  [![Build](https://travis-ci.org/WulianCC/nj.gg.svg)](https://travis-ci.org/WulianCC/nj.gg)  [![Dependency](https://david-dm.org/wuliancc/nj.gg.svg)](https://david-dm.org/wuliancc/nj.gg)  [![io.js](https://img.shields.io/badge/io.js-%3E=_1.5.1-green.svg)](https://iojs.org)
+[![Donate](https://img.shields.io/gratipay/willin.svg)](https://gratipay.com/willin/)  [![Build](https://travis-ci.org/WulianCC/nj.gg.svg)](https://travis-ci.org/WulianCC/nj.gg)  [![Dependency](https://david-dm.org/wuliancc/nj.gg.svg)](https://david-dm.org/wuliancc/nj.gg)
 
 ### Categories And Tags
 

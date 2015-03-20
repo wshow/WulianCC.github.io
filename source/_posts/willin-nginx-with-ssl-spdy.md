@@ -1,10 +1,7 @@
 title: "Willin: Setup Nginx with SSL and SPDY"
 date: 2015-03-20 10:00:18
 categories: Dev
-tags:
-- Nginx
-- Security
-- Performance
+tags: [nginx,security,performance]
 ---
 
 ## Download and Setup
@@ -121,7 +118,6 @@ ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-
 server {
         listen       443 ssl spdy;
         server_name  domain.com;
-        add_header Strict-Transport-Security max-age=15768000;
 
         ssl_dhparam          /path/to/dhparam.pem;
         ssl_certificate      /path/to/crt;
@@ -132,7 +128,6 @@ server {
         ssl_prefer_server_ciphers on;
         ssl_session_cache shared:SSL:10m;
         ssl_session_timeout 10m;
-        ssl_prefer_server_ciphers   on;
         add_header Alternate-Protocol  443:npn-spdy/3;
         add_header Strict-Transport-Security "max-age=31536000; includeSubdomains;";
         #add_header  X-Content-Type-Options "nosniff";

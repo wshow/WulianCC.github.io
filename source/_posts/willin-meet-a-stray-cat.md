@@ -1,9 +1,7 @@
 title: "Willin: Meet A Stray Cat"
 date: 2015-03-19 23:19:46
 categories: Diary
-tags:
-- Life
-- Pet
+tags: [life,pet]
 ---
 
 First met was last weekend, this poor guy was hesitating at the door to my cell.
