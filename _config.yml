@@ -69,5 +69,5 @@ disqus_shortname: wulian
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:WulianCC/nj.gg.git
+  repo: git@gitcafe.com:Wulian/nj.gg.git
   branch: gh-pages
