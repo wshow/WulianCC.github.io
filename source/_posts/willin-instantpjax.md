@@ -27,20 +27,6 @@ or use directly:
 
 ## Usage
 
-First of all, you need to require this js.
-
-```html
-<script src="https://rawgit.com/willin/InstantPjax/dist/instantpjax.min.js" type="application/javascript" data-no-ipjax></script>
-```
-
-### Ignore Elements
-
-Use `data-no-ipjax` attribute like:
-
-```html
-	<h1 data-no-ipjax>Hello World</h1>
-```
-
 ### 1. Basic
 
 Use: `$.fn.ipjax`
