@@ -1,8 +1,8 @@
 (function($){
   // Search
   var $searchWrap = $('#search-form-wrap'),
-    isSearchAnim = false,
-    searchAnimDuration = 200;
+  isSearchAnim = false,
+  searchAnimDuration = 200;
 
   var startSearchAnim = function(){
     isSearchAnim = true;
@@ -38,10 +38,10 @@
     e.stopPropagation();
 
     var $this = $(this),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      id = 'article-share-box-' + $this.attr('data-id'),
-      offset = $this.offset();
+    url = $this.attr('data-url'),
+    encodedUrl = encodeURIComponent(url),
+    id = 'article-share-box-' + $this.attr('data-id'),
+    offset = $this.offset();
 
     if ($('#' + id).length){
       var box = $('#' + id);
@@ -52,15 +52,15 @@
       }
     } else {
       var html = [
-        '<div id="' + id + '" class="article-share-box">',
-          '<input class="article-share-input" value="' + url + '">',
-          '<div class="article-share-links">',
-            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
-          '</div>',
-        '</div>'
+      '<div id="' + id + '" class="article-share-box">',
+      '<input class="article-share-input" value="' + url + '">',
+      '<div class="article-share-links">',
+      '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+      '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+      '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+      '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+      '</div>',
+      '</div>'
       ].join('');
 
       var box = $(html);
@@ -108,8 +108,8 @@
 
   // Mobile nav
   var $container = $('#container'),
-    isMobileNavAnim = false,
-    mobileNavAnimDuration = 200;
+  isMobileNavAnim = false,
+  mobileNavAnimDuration = 200;
 
   var startMobileNavAnim = function(){
     isMobileNavAnim = true;
@@ -131,7 +131,21 @@
 
   $('#wrap').on('click', function(){
     if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
-
     $container.removeClass('mobile-nav-on');
+  });
+  $('body').append('<div class="loader" style="display:none;"></div>');
+  $(document).ipjax('a','#main',{});
+  $(document).on('ipjax.start',function(){
+    $('.loader').stop(true,true).fadeIn(500);
+  });
+  $(document).on('ipjax.end',function(){
+    $('.loader').stop(true,true).fadeOut(500);
+  });
+  $('body').append('<style type="text/css">a.cached{color:green;text-shadow:0px 0px 2px #f60;}</style>')
+  $(document).on('ipjax.cached',function(){
+    $($.ipjax.options.element).addClass('cached');
+    $($.ipjax.options.element).one('mouseleave',function(){
+      $(this).removeClass('cached');
+    });
   });
 })(jQuery);

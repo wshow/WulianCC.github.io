@@ -61,3 +61,28 @@ $base-style
     list-style: decimal
   dt
     font-weight: bold
+
+.loader
+    border:3px solid #f06
+    border-radius:30px
+    height:30px
+    left:50px
+    margin:-15px 0 0 -15px
+    opacity:0
+    position:fixed
+    bottom:50px
+    width:30px 
+    animation: pulsate 1s ease-out
+    animation-iteration-count:infinite
+    z-index:99999
+
+@keyframes pulsate 
+  0% 
+    transform:scale(.1)
+    opacity: 0.0
+  50% 
+    opacity:1
+  100% 
+    transform:scale(1.2)
+    opacity:0
+    
