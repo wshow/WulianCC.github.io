@@ -20,6 +20,7 @@ class AddTimeCommand(sublime_plugin.TextCommand):
 			}
 		)
 ```
+<!--more-->
 
 Save as `AddTime.py`
 

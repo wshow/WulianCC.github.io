@@ -10,6 +10,8 @@ I have no idea whether she's in pregnant, because of the potbelly. She followed 
 
 It have be rainy for days. When I saw her again this night, I made a decision to breed her.
 
+<!--more-->
+
 ![pussy cat](/images/2015/cat.png)
 
 Although I have a bit antipathy of cats, She's pretty, right?

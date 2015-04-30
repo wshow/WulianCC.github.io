@@ -18,6 +18,8 @@ insert into mysql.user(Host,User,Password) values("localhost","USER",password("P
 flush privileges;
 ```
 
+<!--more-->
+
 ### 2. Grant Privileges
 
 ```

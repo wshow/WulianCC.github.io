@@ -134,7 +134,24 @@
     $container.removeClass('mobile-nav-on');
   });
   $('body').append('<div class="loader" style="display:none;"></div>');
-  $(document).ipjax('a','#main',{});
+  //ipjax start
+  $.extend($.ipjax.showFx,{
+    animatecss:function(data, callback, isCached) {
+      $this = this;
+      
+      $this.html(data);
+      $('html, body').stop(true,true).animate({
+        scrollTop: $(location.hash ? location.hash : '#main').offset().top - 100
+      }, 800);
+      $('html, body').one('mousewheel',function(){
+        $('html, body').stop(true,true);
+      });
+      callback && callback.call(this, data, isCached);
+    }
+  });
+  $(document).ipjax('a','#main',{
+    show: 'animatecss'
+  });
   $(document).on('ipjax.start',function(){
     $('.loader').stop(true,true).fadeIn(500);
   });

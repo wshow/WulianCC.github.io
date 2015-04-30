@@ -24,6 +24,7 @@ or use directly:
 
 [https://rawgit.com/willin/InstantPjax/dist/instantpjax.min.js](https://rawgit.com/willin/InstantPjax/dist/instantpjax.min.js)
 
+<!--more-->
 
 ## Usage
 
