@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 那就搞搞
-subtitle: nj.gg - 南京物联传感团队博客
+title: 生活公馆
+subtitle: 南京物联传感团队博客
 description: Wulian Core Team's Blog.
 author: Wulian Core Team
 language:
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://nj.gg
+url: http://blog.sh.gg
 root: /
 permalink: posts/:year/:title/
 permalink_defaults:
@@ -69,5 +69,5 @@ disqus_shortname: wulian
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@gitcafe.com:Wulian/nj.gg.git
+  repo: git@gitcafe.com:Wulian/Wulian.github.io.git
   branch: gh-pages
