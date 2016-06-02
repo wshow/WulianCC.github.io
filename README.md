@@ -2,7 +2,7 @@
 
 ## Wulian Team Blog
 
-[![Donate](https://img.shields.io/gratipay/willin.svg)](https://gratipay.com/willin/)  [![Build](https://travis-ci.org/WulianCC/WulianCC.github.io.svg)](https://travis-ci.org/WulianCC/WulianCC.github.io)  [![Dependency](https://david-dm.org/wuliancc/WulianCC.github.io.svg)](https://david-dm.org/wuliancc/WulianCC.github.io)
+[![Build](https://travis-ci.org/WulianCC/WulianCC.github.io.svg)](https://travis-ci.org/WulianCC/WulianCC.github.io)  [![Dependency](https://david-dm.org/wuliancc/WulianCC.github.io.svg)](https://david-dm.org/wuliancc/WulianCC.github.io)
 
 ### Categories And Tags
 
@@ -61,3 +61,7 @@ make publish
 ```
 
 Now we no need do anything to deploy the site thanks to **Travis-CI**.
+
+通过支付宝捐赠：
+
+![qr](https://cloud.githubusercontent.com/assets/1890238/15489630/fccbb9cc-2193-11e6-9fed-b93c59d6ef37.png)
