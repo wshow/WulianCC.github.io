@@ -1,8 +1,8 @@
-# NJ.GG
+# BLOG.SH.GG
 
 ## Wulian Team Blog
 
-[![Donate](https://img.shields.io/gratipay/willin.svg)](https://gratipay.com/willin/)  [![Build](https://travis-ci.org/WulianCC/nj.gg.svg)](https://travis-ci.org/WulianCC/nj.gg)  [![Dependency](https://david-dm.org/wuliancc/nj.gg.svg)](https://david-dm.org/wuliancc/nj.gg)
+[![Donate](https://img.shields.io/gratipay/willin.svg)](https://gratipay.com/willin/)  [![Build](https://travis-ci.org/WulianCC/WulianCC.github.io.svg)](https://travis-ci.org/WulianCC/WulianCC.github.io)  [![Dependency](https://david-dm.org/wuliancc/WulianCC.github.io.svg)](https://david-dm.org/wuliancc/WulianCC.github.io)
 
 ### Categories And Tags
 
@@ -61,5 +61,3 @@ make publish
 ```
 
 Now we no need do anything to deploy the site thanks to **Travis-CI**.
-
-
