@@ -8,6 +8,12 @@ favicon: /favicon.ico
 # Set default keywords (Use a comma to separate)
 keywords: "sh.gg,willin,wulian,w2fs"
 
+links_title: Links
+links:
+  Willin: http://willin.wang/
+  Candy: http://suzper.com/
+  PML: http://log.lu/
+
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
