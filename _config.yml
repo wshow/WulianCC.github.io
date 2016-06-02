@@ -62,12 +62,22 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
 disqus_shortname: wulian
+theme: next
+
+creative_commons: by-nc
+since: 2014
+avatar: /images/qr.png
+# Social links
+
+
+search:
+  path: search.xml
+  field: post
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@gitcafe.com:Wulian/Wulian.github.io.git
-  branch: gh-pages
+  repo: git@github.com:WulianCC/WulianCC.github.io.git
+  branch: master
