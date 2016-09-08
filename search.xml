@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Willin: 贡献文章]]></title>
+      <url>http://blog.sh.gg/posts/2016/willin-contribute-posts/</url>
+      <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>如何正确地贡献文章</p>
+</blockquote>
+<h2 id="1-版本控制"><a href="#1-版本控制" class="headerlink" title="1. 版本控制"></a>1. 版本控制</h2><p>Fork项目： <a href="https://github.com/WulianCC/WulianCC.github.io" target="_blank" rel="external">https://github.com/WulianCC/WulianCC.github.io</a></p>
+<p>然后<code>git clone</code>到本地。</p>
+<p>Clone到本地之后，需要添加远程源：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add wulian git@github.com:WulianCC/WulianCC.github.io.git</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>和切换到源码分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout <span class="built_in">source</span></div></pre></td></tr></table></figure>
+<p>以后每次发表新文章之前，通过：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull wulian <span class="built_in">source</span></div></pre></td></tr></table></figure>
+<p>进行本地代码的更新。</p>
+<p>Push到自己的项目后，提交一个<code>Pull Request</code>，合并完成即自动部署。</p>
+<h2 id="2-本地调试"><a href="#2-本地调试" class="headerlink" title="2.本地调试"></a>2.本地调试</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm i -g hexo-cli</div><div class="line">npm install</div><div class="line">hexo serve</div></pre></td></tr></table></figure>
+<h2 id="3-撰写文章"><a href="#3-撰写文章" class="headerlink" title="3.撰写文章"></a>3.撰写文章</h2><p>路径位于：<code>source/_posts/</code>目录下。</p>
+<h3 id="规范"><a href="#规范" class="headerlink" title="规范"></a>规范</h3><p>1.文件名： <code>[日期]-[作者]-[文章标题].md</code></p>
+<p>全英文小写和数字，所有连接用 <code>-</code> 表示，禁止使用中文和其他符号如 <code>_</code>。</p>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">2016-06-03-author-my-post-title.md</div></pre></td></tr></table></figure>
+<p>2.内容： <code>Markdown</code></p>
+<p>推荐使用英文撰写，或英文撰写提供中文翻译。</p>
+<p>2.1摘要分隔</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!--more--&gt;</div></pre></td></tr></table></figure>
+<p>2.2居中引用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% cq %&#125;</div><div class="line">如何正确地贡献文章</div><div class="line">&#123;% endcq %&#125;</div></pre></td></tr></table></figure>
+<p>其他特性自己挖掘，参考 <code>Markdown</code> 语法 和 <code>Hexo</code> 语法。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Willin: jQuery InstantPjax]]></title>
+      <url>http://blog.sh.gg/posts/2015/willin-instantpjax/</url>
+      <content type="html"><![CDATA[<h2 id="InstantPjax-A-jQuery-Instant-Pjax-Plugin"><a href="#InstantPjax-A-jQuery-Instant-Pjax-Plugin" class="headerlink" title="InstantPjax - A jQuery Instant Pjax Plugin"></a>InstantPjax - A jQuery Instant Pjax Plugin</h2><h3 id="Not-for-noob"><a href="#Not-for-noob" class="headerlink" title="Not for noob."></a>Not for noob.</h3><p>Demo: this site.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bower install instantpjax</div></pre></td></tr></table></figure>
+<p>or download here: </p>
+<p><a href="https://github.com/willin/InstantPjax/releases" target="_blank" rel="external">https://github.com/willin/InstantPjax/releases</a></p>
+<p>or use directly: </p>
+<p><a href="https://rawgit.com/willin/InstantPjax/dist/instantpjax.min.js" target="_blank" rel="external">https://rawgit.com/willin/InstantPjax/dist/instantpjax.min.js</a></p>
+<a id="more"></a>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><h3 id="1-Basic"><a href="#1-Basic" class="headerlink" title="1. Basic"></a>1. Basic</h3><p>Use: <code>$.fn.ipjax</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*selector,container,config*/</span></div><div class="line">$(<span class="built_in">document</span>).ipjax(<span class="string">'a'</span>,<span class="string">'#main'</span>,&#123;</div><div class="line">	timeout: <span class="number">2000</span>, <span class="comment">//ms</span></div><div class="line">	cache:  <span class="number">3600</span>*<span class="number">24</span>*<span class="number">7</span>, <span class="comment">//s, 0 for disable cache</span></div><div class="line">	storage: <span class="literal">true</span>, <span class="comment">//false for disable localStorage</span></div><div class="line">	delay: <span class="number">300</span>, <span class="comment">//ms, 0 for disable mouse over preloading</span></div><div class="line">	push: <span class="literal">true</span>, <span class="comment">// true is push, false is replace, null for do nothing</span></div><div class="line">	titleSuffix: <span class="string">''</span>, </div><div class="line">	show: <span class="string">''</span>, <span class="comment">// _default/fade or Animation Function(data, callback, isCached)</span></div><div class="line">&#125;);</div><div class="line">$(<span class="built_in">document</span>).on(<span class="string">'ipjax.start'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="comment">//start animation here</span></div><div class="line">	<span class="comment">// Example:</span></div><div class="line">	<span class="comment">/*</span></div><div class="line">	$('#loading').show();</div><div class="line">	*/</div><div class="line">&#125;);</div><div class="line">$(<span class="built_in">document</span>).on(<span class="string">'ipjax.end'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="comment">//end animation here</span></div><div class="line">	<span class="comment">// Example:</span></div><div class="line">	<span class="comment">/*</span></div><div class="line">	$('#loading').hide();</div><div class="line">	*/</div><div class="line">&#125;);</div><div class="line">$(<span class="built_in">document</span>).on(<span class="string">'ipjax.cached'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="comment">//if cached animation here</span></div><div class="line">	<span class="comment">// Example:</span></div><div class="line">	<span class="comment">/*</span></div><div class="line">	$($.ipjax.options.element).addClass('cached');</div><div class="line">	$($.ipjax.options.element).one('mouseleave',function()&#123;</div><div class="line">	  $(this).removeClass('cached');</div><div class="line">	&#125;);</div><div class="line">	*/</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="2-Manual-Request"><a href="#2-Manual-Request" class="headerlink" title="2. Manual Request"></a>2. Manual Request</h3><p>See <a href="http://api.jquery.com/jQuery.ajax/#jQuery-ajax-settings" target="_blank" rel="external">jQuery.ajax/#jQuery-ajax-settings</a></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">$.ipjax(&#123;</div><div class="line">	url: <span class="string">''</span>,</div><div class="line">	container: <span class="string">'#main'</span>,</div><div class="line">	timeout: <span class="number">2000</span>, <span class="comment">//ms</span></div><div class="line">       cache:  <span class="number">3600</span>*<span class="number">24</span>*<span class="number">7</span>, <span class="comment">//s, 0 for disable cache</span></div><div class="line">       storage: <span class="literal">true</span>, <span class="comment">//false for disable localStorage</span></div><div class="line">       delay: <span class="number">300</span>, <span class="comment">//ms, 0 for disable mouse over preloading</span></div><div class="line">       push: <span class="literal">true</span>, <span class="comment">// true is push, false is replace, null for do nothing</span></div><div class="line">       titleSuffix: <span class="string">''</span>, </div><div class="line">       show: <span class="string">''</span>, <span class="comment">// _default/fade or Animation Function(data, callback, isCached)</span></div><div class="line">       type:<span class="string">'GET'</span>,</div><div class="line">       dataType: <span class="string">'html'</span>,</div><div class="line">       data:&#123;</div><div class="line">           ipjax: <span class="literal">true</span></div><div class="line">       &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Feel free to star or fork it:</p>
+<div class="github-widget" data-repo="willin/InstantPjax"></div>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Willin: Sublime Add Current Time]]></title>
+      <url>http://blog.sh.gg/posts/2015/willin-sublime-add-current-time/</url>
+      <content type="html"><![CDATA[<h2 id="1-Add-a-New-Plugin"><a href="#1-Add-a-New-Plugin" class="headerlink" title="1. Add a New Plugin"></a>1. Add a New Plugin</h2><blockquote>
+<p>Toolbar -&gt; Tools -&gt; New Plugin</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">import datetime  </div><div class="line">import sublime, sublime_plugin</div><div class="line"></div><div class="line">class AddTimeCommand(sublime_plugin.TextCommand):</div><div class="line">	def run(self, edit):</div><div class="line">		self.view.run_command(&quot;insert_snippet&quot;, </div><div class="line">			&#123;</div><div class="line">				&quot;contents&quot;: &quot;%s&quot; % datetime.datetime.now().strftime(&quot;%Y-%m-%d %H:%M:%S&quot;)</div><div class="line">			&#125;</div><div class="line">		)</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>Save as <code>AddTime.py</code></p>
+<h2 id="2-Add-a-Shortcut"><a href="#2-Add-a-Shortcut" class="headerlink" title="2. Add a Shortcut"></a>2. Add a Shortcut</h2><blockquote>
+<p>Toolbar -&gt; Sublime Text -&gt; Preferences -&gt; Key Bindings - User</p>
+</blockquote>
+<p>Append a new line:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&quot;keys&quot;: [&quot;command+shift+.&quot;],&quot;command&quot;: &quot;add_time&quot;&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>2015-04-20 14:20:57</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Willin: Mysql Add User and Grant Privileges]]></title>
+      <url>http://blog.sh.gg/posts/2015/willin-mysql-add-user/</url>
+      <content type="html"><![CDATA[<p>Login into mysql console:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql -u root -p</div></pre></td></tr></table></figure>
+<h3 id="1-Add-A-User"><a href="#1-Add-A-User" class="headerlink" title="1. Add A User"></a>1. Add A User</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">insert into mysql.user(Host,User,Password) values(&quot;localhost&quot;,&quot;USER&quot;,password(&quot;PASSWORD&quot;));</div><div class="line">flush privileges;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="2-Grant-Privileges"><a href="#2-Grant-Privileges" class="headerlink" title="2. Grant Privileges"></a>2. Grant Privileges</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">grant all privileges on DATABASEX.* to USER@localhost identified by &apos;PASSWORD&apos;;</div><div class="line">flush privileges;</div></pre></td></tr></table></figure>
+<p>Options:</p>
+<ul>
+<li>ALL</li>
+<li>ALTER</li>
+<li>CREATE</li>
+<li>DROP</li>
+<li>SELECT</li>
+<li>UPDATE</li>
+<li>DELETE</li>
+</ul>
+<h3 id="Optional-Change-Password"><a href="#Optional-Change-Password" class="headerlink" title="Optional: Change Password"></a>Optional: Change Password</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">update mysql.user set password=password(&apos;NEW PASSWORD&apos;) where User=&quot;USER&quot; and Host=&quot;localhost&quot;;</div><div class="line">flush privileges;</div></pre></td></tr></table></figure>
+<h3 id="Optional-Delete-A-User"><a href="#Optional-Delete-A-User" class="headerlink" title="Optional: Delete A User"></a>Optional: Delete A User</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">DELETE FROM user WHERE User=&quot;USER&quot; and Host=&quot;localhost&quot;;</div><div class="line">flush privileges;</div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Willin: Setup Nginx with SSL and SPDY]]></title>
+      <url>http://blog.sh.gg/posts/2015/willin-nginx-with-ssl-spdy/</url>
+      <content type="html"><![CDATA[<h2 id="Download-and-Setup"><a href="#Download-and-Setup" class="headerlink" title="Download and Setup"></a>Download and Setup</h2><h3 id="1-PCRE"><a href="#1-PCRE" class="headerlink" title="1. PCRE"></a>1. PCRE</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">wget -c http://softlayer-sng.dl.sourceforge.net/project/pcre/pcre/8.36/pcre-8.36.zip</div><div class="line">unzip pcre-8.36.zip</div><div class="line">cd pcre-8.36</div><div class="line"></div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="2-OpenSSL"><a href="#2-OpenSSL" class="headerlink" title="2. OpenSSL"></a>2. OpenSSL</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">wget -c http://www.openssl.org/source/openssl-1.0.2a.tar.gz</div><div class="line">tar zxvf openssl-1.0.2a.tar.gz</div><div class="line">cd openssl-1.0.2a</div><div class="line"></div><div class="line">./config</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
+<h3 id="3-Nginx"><a href="#3-Nginx" class="headerlink" title="3. Nginx"></a>3. Nginx</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">wget -c http://nginx.org/download/nginx-1.7.10.tar.gz</div><div class="line">tar zxvf nginx-1.7.10.tar.gz</div><div class="line">cd nginx-1.7.10</div><div class="line"></div><div class="line">./configure --with-pcre --with-openssl --with-http_ssl_module --with-http_spdy_module</div><div class="line"></div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
+<p>Optional</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/local/nginx/sbin/nginx /usr/local/bin/nginx</div></pre></td></tr></table></figure>
+<h2 id="What-is-Google-SPDY"><a href="#What-is-Google-SPDY" class="headerlink" title="What is Google SPDY ?"></a>What is Google SPDY ?</h2><p>SPDY (pronounced speedy) is similar to HTTP, with particular goals of reducing web page load latency and improving web security. SPDY achieves reduced latency through compression (of both request and response HTTP headers), multiplexing (allows for unlimited concurrent streams over a single TCP connection), and prioritization (client side requests are each assigned a priority).</p>
+<p>From <a href="http://dev.chromium.org/spdy/spdy-whitepaper" target="_blank" rel="external">SPDY whitepaper</a> some numbers:</p>
+<blockquote>
+<ul>
+<li>SPDY sends ~40% fewer packets than HTTP, which means fewer packets affected by loss.</li>
+<li>SPDY uses fewer TCP connections, which means fewer chances to lose the SYN packet. In many TCP implementations, this delay is disproportionately expensive (up to 3 s).</li>
+<li>SPDY’s more efficient use of TCP usually triggers TCP’s fast retransmit instead of using retransmit timers.</li>
+</ul>
+<p>We discovered that SPDY’s latency savings also increased proportionally with increases in RTTs, up to a 27% speedup at 200 ms. The  The reason that SPDY does better as RTT goes up is because SPDY fetches all requests in parallel. If an HTTP client has 4 connections per domain, and 20 resources to fetch, it would take roughly 5 RTs to fetch all 20 items.  SPDY fetches all 20 resources in one RT.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>RTT in ms</th>
+<th>HTTP(ms)</th>
+<th>SPDY (TCP)  (ms)</th>
+<th>Speed Up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>1240</td>
+<td>1087</td>
+<td>12.34%</td>
+</tr>
+<tr>
+<td>40</td>
+<td>1571</td>
+<td>1279</td>
+<td>18.59%</td>
+</tr>
+<tr>
+<td>60</td>
+<td>1909</td>
+<td>1526</td>
+<td>20.06%</td>
+</tr>
+<tr>
+<td>80</td>
+<td>2268</td>
+<td>1727</td>
+<td>23.85%</td>
+</tr>
+<tr>
+<td>120</td>
+<td>2927</td>
+<td>2240</td>
+<td>23.47%</td>
+</tr>
+<tr>
+<td>160</td>
+<td>3650</td>
+<td>2772</td>
+<td>24.05%</td>
+</tr>
+<tr>
+<td>200</td>
+<td>4498</td>
+<td>3293</td>
+<td>26.79%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><h3 id="dhparam"><a href="#dhparam" class="headerlink" title="dhparam"></a>dhparam</h3><p>For DHE key-exchange, generate a <code>dhparam.pem</code> file at <code>/usr/local/nginx/conf/ssl/domaincom/dhparam.pem</code> with higher strength 2048 bit or 4096 bit key-exchange instead of using Nginx’s OpenSSL Ephemeral Diffie-Hellman (DHE) default key of 1024 bit to at least match SSL 2048 bit certificates.</p>
+<p>To generate dhparam file you can either use one of the 2 below commands (not both). Both can take quite a long time to generate depending on your server’s processing power. The 4096 bit can take between 15-60 minutes to generate.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/nginx/conf/ssl/domaincom</div><div class="line">openssl dhparam -out dhparam.pem 2048</div></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/nginx/conf/ssl/domaincom</div><div class="line">openssl dhparam -out dhparam.pem 4096</div></pre></td></tr></table></figure>
+<p>Within Nginx vhost you’d add this line.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssl_dhparam /usr/local/nginx/conf/ssl/domaincom/dhparam.pem;</div></pre></td></tr></table></figure>
+<h3 id="ssl-ciphers"><a href="#ssl-ciphers" class="headerlink" title="ssl_ciphers"></a>ssl_ciphers</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssl_ciphers &apos;ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!CAMELLIA:!DES:!MD5:!PSK:!RC4&apos;;</div></pre></td></tr></table></figure>
+<p>or below seems better (From: <a href="http://centminmod.com/nginx_configure_https_ssl_spdy.html" target="_blank" rel="external">http://centminmod.com/nginx_configure_https_ssl_spdy.html</a>)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA:!CAMELLIA;</div></pre></td></tr></table></figure>
+<h3 id="Nginx-Conf"><a href="#Nginx-Conf" class="headerlink" title="Nginx Conf"></a>Nginx Conf</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen       443 ssl spdy;</div><div class="line">        server_name  domain.com;</div><div class="line"></div><div class="line">        ssl_dhparam          /path/to/dhparam.pem;</div><div class="line">        ssl_certificate      /path/to/crt;</div><div class="line">        ssl_certificate_key  /path/to/key;</div><div class="line"></div><div class="line">        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</div><div class="line">        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA:!CAMELLIA;</div><div class="line">        ssl_prefer_server_ciphers on;</div><div class="line">        ssl_session_cache shared:SSL:10m;</div><div class="line">        ssl_session_timeout 10m;</div><div class="line">        add_header Alternate-Protocol  443:npn-spdy/3;</div><div class="line">        add_header Strict-Transport-Security &quot;max-age=31536000; includeSubdomains;&quot;;</div><div class="line">        #add_header  X-Content-Type-Options &quot;nosniff&quot;;</div><div class="line">        #add_header X-Frame-Options DENY;</div><div class="line"></div><div class="line">        access_log /home/nginx/domains/domain.com/log/access.log combined buffer=32k;</div><div class="line">        error_log /home/nginx/domains/domain.com/log/error.log;</div><div class="line"></div><div class="line">        ......</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Willin: Meet A Stray Cat]]></title>
+      <url>http://blog.sh.gg/posts/2015/willin-meet-a-stray-cat/</url>
+      <content type="html"><![CDATA[<p>First met was last weekend, this poor guy was hesitating at the door to my cell.</p>
+<p>I have no idea whether she’s in pregnant, because of the potbelly. She followed me almost till home.</p>
+<p>It have be rainy for days. When I saw her again this night, I made a decision to breed her.</p>
+<a id="more"></a>
+<p><img src="/images/2015/cat.png" alt="pussy cat"></p>
+<p>Although I have a bit antipathy of cats, She’s pretty, right?</p>
+<p><img src="/images/2015/cat2.png" alt="pussy cat"></p>
+<p>I name her <strong>团团 (Tuantuan)</strong>. And from this day on, she is my family.</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Willin: Hello World!]]></title>
+      <url>http://blog.sh.gg/posts/2015/willin-hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to Nanjing Wulian Core Team Blog. I call this site <strong><em>那就搞搞</em></strong> (Just Do Something), which in Chinese pinyin is short for <a href="http://nj.gg" target="_blank" rel="external">nj.gg</a>.</p>
+<p>This site is open source under <a href="http://hexo.io/" target="_blank" rel="external">Hexo.io</a> and hosted on <a href="https://github.com" target="_blank" rel="external">Github</a>. You can fork this repo freely at <a href="https://github.com/WulianCC/nj.gg/fork" target="_blank" rel="external">https://github.com/WulianCC/nj.gg/fork</a></p>
+<h2 id="Original-Members"><a href="#Original-Members" class="headerlink" title="Original Members"></a>Original Members</h2><h3 id="willin"><a href="#willin" class="headerlink" title="willin"></a><a href="https://github.com/willin" target="_blank" rel="external">willin</a></h3><p>It’s me, Willin Wang (Wang Zhilin in Chinese).</p>
+<p>You can also find me at <a href="http://willin.wang" target="_blank" rel="external">http://willin.wang</a></p>
+<h3 id="ccbikai"><a href="#ccbikai" class="headerlink" title="ccbikai"></a><a href="https://github.com/ccbikai" target="_blank" rel="external">ccbikai</a></h3><h2 id="Copyright"><a href="#Copyright" class="headerlink" title="Copyright"></a>Copyright</h2><p>Documentation licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external">CC BY-NC-SA 4.0</a> ( <strong>if no extra announcement</strong> ).</p>
+<hr>
+<p>Our Official Site: <a href="http://wulian.cc" target="_blank" rel="external">http://wulian.cc</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
